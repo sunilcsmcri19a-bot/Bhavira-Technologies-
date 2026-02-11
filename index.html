@@ -1,1 +1,298 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Bhavira Technologies</title>\n    <style>\n        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }\n        header { background: linear-gradient(to right, teal, cyan); color: white; padding: 20px; text-align: center; }\n        section { margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }\n        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }\n        .card { border: 1px solid #ccc; border-radius: 5px; padding: 10px; background: #f9f9f9; }\n        h2 { color: teal; }\n        footer { text-align: center; margin: 20px; }\n    </style>\n</head>\n<body>\n    <header>\n        <h1>Bhavira Technologies</h1>\n        <p>Your tagline goes here</p>\n    </header>\n    <section>\n        <h2>The Problem</h2>\n        <p>Description of the problem...</p>\n    </section>\n    <section>\n        <h2>Our Technology Process</h2>\n        <div class="grid">\n            <div class="card"><h3>EPS Waste Collection</h3></div>\n            <div class="card"><h3>Plasma Conversion</h3></div>\n            <div class="card"><h3>Conductive Electrode Fabrication</h3></div>\n            <div class="card"><h3>Advanced Applications</h3></div>\n        </div>\n    </section>\n    <section>\n        <h2>Key Applications</h2>\n        <div class="grid">\n            <div class="card"><h3>Battery Systems</h3></div>\n            <div class="card"><h3>Metal Recovery</h3></div>\n            <div class="card"><h3>Water Treatment</h3></div>\n            <div class="card"><h3>Electrochemical Sensors</h3></div>\n            <div class="card"><h3>Wastewater Monitoring</h3></div>\n            <div class="card"><h3>Biosensing</h3></div>\n        </div>\n    </section>\n    <section>\n        <h2>Impact & Benefits</h2>\n        <p>500kg waste EPS recycled per week, 95% reduction of CO2 emissions, Low-cost scalable sustainable.</p>\n    </section>\n    <section>\n        <h2>Product Features</h2>\n        <div class="grid">\n            <div class="card"><h3>Highly Conductive</h3></div>\n            <div class="card"><h3>Self-Standing</h3></div>\n            <div class="card"><h3>Multipurpose Use</h3></div>\n            <div class="card"><h3>Durable & Stable</h3></div>\n        </div>\n    </section>\n    <section>\n        <h2>Scale</h2>\n        <p>5,000+ kg/month processing, 100,000+ units/month production.</p>\n    </section>\n    <footer>\n        <h2>Contact Us</h2>\n        <p>Contact information goes here.</p>\n    </footer>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhavira Technologies | Waste-to-Value Electrodes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+    header {
+      background: linear-gradient(135deg, #0d9488, #14b8a6, #5eead4);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    header p {
+      font-size: 1.3rem;
+      max-width: 900px;
+      margin: 0 auto;
+      font-weight: 300;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section:nth-child(even) {
+      background: #f0fdfa;
+    }
+    h2 {
+      color: #0d9488;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    h3 {
+      color: #14b8a6;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .grid-4 {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-top: 4px solid #14b8a6;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .process-card {
+      text-align: center;
+      border-top: 4px solid #0d9488;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      min-width: 200px;
+    }
+    .stat-number {
+      font-size: 3rem;
+      color: #0d9488;
+      font-weight: bold;
+    }
+    .stat-label {
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    .cta {
+      background: linear-gradient(135deg, #065f46, #0d9488);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .cta h2 {
+      color: white;
+    }
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #5eead4;
+      color: #065f46;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .cta a:hover {
+      background: #2dd4bf;
+      transform: scale(1.05);
+    }
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    .features-list {
+      list-style: none;
+      padding: 0;
+    }
+    .features-list li {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .features-list li:before {
+      content: "✓ ";
+      color: #14b8a6;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bhavira Technologies</h1>
+  <p>
+    <strong>Innovating for a Sustainable Future</strong>
+    <br />
+    Transforming EPS waste into high-performance electrochemical electrodes through advanced plasma conversion technology
+  </p>
+</header>
+
+<section>
+  <h2>The Problem</h2>
+  <p style="text-align: center; font-size: 1.1rem; max-width: 900px; margin: 0 auto;">
+    Millions of tonnes of plastic waste, including Expanded Polystyrene (EPS), end up in landfills every year, 
+    creating long-term environmental damage while valuable material resources are lost. At the same time, 
+    advanced electrochemical technologies rely on costly and resource-intensive materials.
+  </p>
+</section>
+
+<section>
+  <h2>Our Technology Process</h2>
+  <div class="grid grid-4">
+    <div class="card process-card">
+      <h3>1. EPS Waste Collection</h3>
+      <p>Collection and sorting of landfill-derived EPS waste materials</p>
+    </div>
+    <div class="card process-card">
+      <h3>2. Plasma Conversion</h3>
+      <p>Advanced plasma treatment for material transformation</p>
+    </div>
+    <div class="card process-card">
+      <h3>3. Electrode Fabrication</h3>
+      <p>Manufacturing of conductive electrodes with thermocol-derived carbon and graphite powder</p>
+    </div>
+    <div class="card process-card">
+      <h3>4. Advanced Applications</h3>
+      <p>Deployment in energy, sensing, and environmental systems</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Key Applications</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Battery Systems</h3>
+      <p>High-performance electrodes for energy storage solutions</p>
+    </div>
+    <div class="card">
+      <h3>Metal Recovery</h3>
+      <p>Efficient electrochemical metal recovery from waste streams</p>
+    </div>
+    <div class="card">
+      <h3>Water Treatment</h3>
+      <p>Advanced electrochemical water purification systems</p>
+    </div>
+    <div class="card">
+      <h3>Electrochemical Sensors</h3>
+      <p>Precision sensing for environmental and industrial monitoring</p>
+    </div>
+    <div class="card">
+      <h3>Wastewater Monitoring</h3>
+      <p>Real-time detection and analysis of water contaminants</p>
+    </div>
+    <div class="card">
+      <h3>Biosensing</h3>
+      <p>Medical and biological detection applications</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Impact & Benefits</h2>
+  <div class="stats">
+    <div class="stat-item">
+      <div class="stat-number">500kg</div>
+      <div class="stat-label">Waste EPS Recycled<br/>Per Week</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">95%</div>
+      <div class="stat-label">Reduction of<br/>CO₂ Emissions</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">5,000+</div>
+      <div class="stat-label">kg/month<br/>Processing Capacity</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">100,000+</div>
+      <div class="stat-label">Units/month<br/>Production</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Product Features</h2>
+  <div class="grid grid-4">
+    <div class="card">
+      <h3>Highly Conductive</h3>
+      <p>Excellent electrical conductivity for optimal performance</p>
+    </div>
+    <div class="card">
+      <h3>Self-Standing</h3>
+      <p>Robust mechanical structure without additional support</p>
+    </div>
+    <div class="card">
+      <h3>Multipurpose Use</h3>
+      <p>Versatile applications across multiple industries</p>
+    </div>
+    <div class="card">
+      <h3>Durable & Stable</h3>
+      <p>Long-lasting performance in demanding conditions</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Who We Work With</h2>
+  <p style="text-align: center; font-size: 1.1rem; max-width: 900px; margin: 0 auto;">
+    Bhavira Technologies is an academic spin-out working with <strong>research institutions, investors,
+    industry partners, and customers</strong> to accelerate sustainable materials from lab to market.
+    We're building partnerships across the circular economy ecosystem to drive innovation in 
+    waste-to-value technologies.
+  </p>
+</section>
+
+<section class="cta">
+  <h2>Let's Build the Circular Future</h2>
+  <p>
+    Interested in collaboration, investment, or pilot projects?<br/>
+    We'd love to hear from you!
+  </p>
+  <a href="mailto:contact@bhaviratechnologies.com">Get in Touch</a>
+</section>
+
+<footer>
+  © 2026 Bhavira Technologies. Waste-to-Value Electrochemical Technologies.<br/>
+  Innovating for a Sustainable Future
+</footer>
+
+</body>
+</html>
